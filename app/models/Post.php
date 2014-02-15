@@ -1,3 +1,7 @@
 <?php
 
-class Post extends Eloquent {}
+class Post extends Eloquent {
+
+    protected $guarded = ['id'];
+
+}
