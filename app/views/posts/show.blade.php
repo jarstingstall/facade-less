@@ -11,7 +11,7 @@
         <p>{{ $post->body }}</p>
         {{ $app['html']->linkRoute('posts.edit', 'Edit', $post->id) }}
 
-        {{ $app['form']->open(['route' => ['posts.update', $post->id], 'method' => 'delete']) }}
+        {{ $app['form']->open(['route' => ['posts.destroy', $post->id], 'method' => 'delete']) }}
             {{ $app['form']->submit('Delete') }}
         {{ $app['form']->close() }}
 
